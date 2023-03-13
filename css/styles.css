@@ -1,34 +1,13 @@
-/* Imports */
+/* Imports*/
+@import url('generalStyle.css');
 @import url('menu.css');
+@import url('card.css');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 /* I define the variables */
 :root {
-    --color-1: #FFFFFF;
-    --color-2: #f1e8df;
-    --color-3: #ffdcb5;
-    --color-4: #928872;
-    --color-5: #FF715B;
-}
-
-
-/* General styles */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to top, var(--color-3), var(--color-2));
-}
-
-button, a {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-1);
+    --color-1: #e2d7c3;
+    --color-2: #EBE1CE;
+    --color-3: #2D2827;
+    --color-4: #ED3C1F;
 }

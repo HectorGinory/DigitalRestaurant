@@ -1,24 +1,35 @@
 .header {
     width: 100%;
     height: 5rem;
-    background: var(--color-5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-bottom: .1rem solid var(--color-3);
 }
+
 
 .menu-container {
     width: 98%;
-    height: 90%;
-    display: flex;
-    align-items: center;
+    height: 4rem;
     justify-content: space-between;
 }
-
 .menu {
-    width: 15rem;
+    width: 17rem;
+}
+
+.hamburguer {
+    height: 4rem;
+    width: 4rem;
+    border-left: .1rem solid var(--color-3);
+    gap: .6rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.hamburguer div {
+    width: 50%;
+    height: .1rem;
+    background: var(--color-3);
 }
 
 .btn-container {
@@ -26,7 +37,13 @@
     align-items: center;
     justify-content: space-between;
     width: 15rem;
+    margin-left: .5rem;
 
+}
+
+.btn-container a {
+    color: var(--color-3);
+    transition: .5s;
 }
 .btn-container a::after {
     content: '';
@@ -35,9 +52,77 @@
     width: 0;
     height: 0.1rem;
     transition: .5s;
-    background: var(--color-1);
+    background: var(--color-4);
     margin-top: -0.1rem;
+}
+.btn-container a:hover {
+    color: var(--color-4);
 }
 .btn-container a:hover::after {
     width: 100%;
+}
+
+.btn-container .actual-page {
+    color: var(--color-4);
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        align-items: flex-start;
+    }
+
+    .menu-container img {
+        margin-top: .5rem;
+    }
+    .menu {
+        height: 4rem;
+        width: 6rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+        z-index: 999;
+    }
+
+    .menu:hover {
+        height: 20rem;
+    }
+
+    .menu:hover .btn-container {
+        display: flex;
+        flex-direction: column;
+        width: 4rem;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 15rem;
+        align-items: center;
+        padding-right: 0.5rem;
+        opacity: 1;
+        transition: 1s;
+    }
+    .menu .hamburguer div {
+        transition: .5s;
+    }
+    .menu:hover .hamburguer div:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 0.7rem;
+    }
+    .menu:hover .hamburguer div:nth-child(2){
+        opacity: 0;
+        transition: 0;
+    }
+    .menu:hover .hamburguer div:nth-child(3){
+        transform: rotate(-45deg);
+        position: relative;
+        top: -0.7rem;
+    }
+    .hamburguer {
+        display: flex;
+    }
+
+    .btn-container {
+        height: 0;
+        opacity: 0;
+    }
 }
