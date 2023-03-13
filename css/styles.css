@@ -1,7 +1,34 @@
+/* Imports */
+@import url('menu.css');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* I define the variables */
 :root {
-    --color-1: #4C5454;
-    --color-2: #FF715B;
-    --color-3: #FFFFFF;
-    --color-4: #1ea896;
-    --color-5: #523f38;
+    --color-1: #FFFFFF;
+    --color-2: #f1e8df;
+    --color-3: #ffdcb5;
+    --color-4: #928872;
+    --color-5: #FF715B;
+}
+
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, var(--color-3), var(--color-2));
+}
+
+button, a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-1);
 }
