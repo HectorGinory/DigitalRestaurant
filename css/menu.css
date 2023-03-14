@@ -13,7 +13,7 @@
 }
 
 .menu-container img {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .menu {
     width: 17rem;
@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     width: 15rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .btn-container a {
@@ -106,6 +106,7 @@
         background: var(--color-4);
         margin-right: 0;
         z-index: 2;
+
     }
 
     .menu .btn-container a {
@@ -113,7 +114,8 @@
         height: calc(100% / 3);
     }
     .menu .btn-container a:hover {
-        background: rgba(255, 255, 255, 0.153);
+        background: var(--color-1);
+        color: var(--color-4);
     }
 
     .menu .btn-container a:hover::after {
@@ -150,4 +152,4 @@
     .menu-container img {
         width: 8rem;
     }
-} 
+}
