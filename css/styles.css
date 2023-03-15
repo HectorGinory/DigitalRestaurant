@@ -3,12 +3,23 @@
 @import url('menu.css');
 @import url('card.css');
 @import url('home.css');
+@import url('contact.css');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;700;900&display=swap');
 
 /* I define the variables */
 :root {
     --color-1: #e2d7c3;
     --color-2: #EBE1CE;
+    --color-3: #001524;
+    --color-4: #15616D;
+    --color-5: ;
+}
+
+
+:root {
+    --color-1: #ff7d00;
+    --color-2: #efeae2;
     --color-3: #2D2827;
     --color-4: #ED3C1F;
 }

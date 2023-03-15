@@ -3,3 +3,6 @@
 - [] Terminar diseño Contact y hacerlo responsive
 - [] Terminar diseño Carta y hacerlo responsive
 - [] Funcionalidad pasar página
+
+
+- ADD HOME TO THE PROYECT

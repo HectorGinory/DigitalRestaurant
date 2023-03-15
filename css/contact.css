@@ -1,0 +1,75 @@
+.contact-container {
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+.contact-container .container {
+    width: 26%;
+    height: 85%;
+    background-color: var(--color-2);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.166), rgba(255, 255, 255, 0.104));   
+    border-radius: .5rem;
+    box-shadow: 0 0 .4rem var(--color-4),
+                inset .3rem 0 0.2rem rgba(0, 0, 0, 0.218);
+    color: var(--color-3);
+    border: .3rem solid var(--color-4);
+    justify-content: flex-start;
+}
+
+
+.contact-container .container h4:first-child {
+    font-size: 1.6rem;
+    background: var(--color-4);
+    color: var(--color-2);
+    font-weight: 100;
+    border-bottom: 0.2rem solid var(--color-4);
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 .3rem 0.2rem rgba(0, 0, 0, 0.218);
+}
+
+.contact-container .container p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: 400;
+}
+
+
+.contact-container .container a {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+.contact-container .container .form-Elem {
+    border: 0;
+    box-shadow: 0 0 0.2rem var(--color-4);
+    margin: .5rem 0;
+    padding: .5rem;
+    border-radius: 0.3rem;
+    background: transparent;
+    border: .1rem solid var(--color-4);
+    width: 90%;
+}
+
+.contact-container .container textarea {   
+    resize: none;
+    height: 6rem;
+    width: 11rem;
+}
+
+.contact-container .container > div {
+    height: 85%;
+    border: 1px solid black;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-container .container h5 {
+    font-size: 1.1rem;
+}
