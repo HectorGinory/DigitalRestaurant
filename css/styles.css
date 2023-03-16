@@ -9,17 +9,30 @@
 
 /* I define the variables */
 :root {
-    --color-1: #e2d7c3;
-    --color-2: #EBE1CE;
-    --color-3: #001524;
-    --color-4: #15616D;
-    --color-5: ;
-}
-
-
-:root {
     --color-1: #ff7d00;
     --color-2: #efeae2;
     --color-3: #2D2827;
     --color-4: #ED3C1F;
 }
+
+::-webkit-scrollbar {
+    height: 70%;
+    background: var(--color-2);
+    width: 15px;
+    border: 5px solid var(--color-2);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-4);
+    border: 3px solid var(--color-2);
+    border-radius: 50px;
+    width: 10px;
+    transition: .2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-1);
+  }/*# sourceMappingURL=generalStyles.css.map */
+

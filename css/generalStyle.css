@@ -25,6 +25,8 @@ a {
 .main-container {
     width: 100vw;
     height: calc(100vh - 5rem);
+    overflow: auto;
+    margin-top: 5rem;
 }
 
 .flex-c {
