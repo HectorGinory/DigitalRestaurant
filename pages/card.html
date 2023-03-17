@@ -10,7 +10,7 @@
 <body>
     <div class="header flex-r">
         <div class="flex-r menu-container">
-            <img src="../assets/img/logo_black.png" alt="logo">
+            <img src="../assets/img/logo_white.png" alt="logo">
             <div class="flex-r menu">
                 <div class="hamburguer">
                     <div></div>
@@ -18,32 +18,110 @@
                     <div></div>
                 </div>
                 <div class="btn-container">
-                    <a href="../index.html">Home</a>
-                    <a href="./contact.html">Contacto</a>
-                    <a href="./card.html" class="actual-page">Carta</a>
+                    <a href="../index.html" class="flex-c">Home</a>
+                    <a href="./contact.html" class="actual-page flex-c">Contacto</a>
+                    <a href="./card.html" class="flex-c">Carta</a>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="main-container flex-c">
         <h2>Carta del local</h2>
         <p>Pase la página para ver más</p>
-        <div class="card-container flex-r one-page">
-            <div class="left-container pages">
-                <div class="main-page page pageOn flex-c rightNextPage"> 
-                    <h3>Menu</h3>
-                    <img src="../assets/img/logo_black.png">
-                    <p>ボン・アペティ</p>
-                    <button class="next-page">
-                        <p>Siguiente</p>
-                    </button>
-                </div>
-                <div class="pageOff page flex-c ç">
 
+        <div class="card-container flex-c">
+            <div class="next-back-btn">
+                <button id="prev" onclick="prevPage()">
+                    prev
+                </button>
+                <button id="next" onclick="nextPage()">
+                    NEXT
+                </button>
+            </div>
+            <div class="card flex-c on">
+                <div class="title flex-c">
+                    <img src="../assets/img/logo_black.png">
+                    <h3>レストラン</h3>
+                    <p>gluten & dairy free, vegan friendly</p>
+                </div>
+                <div class="list">
+                    <div class="article flex-c">
+                        <div class="name-price flex-r">
+                            <p>Gohan</p>
+                            <p>2,75€</p>
+                        </div>
+                        <p>Acompañamiento tradicional en cualquier
+                            comida japonesa. Arroz blanco al vapor.
+                        </p>
+                    </div>
+                </div>
+                <div class="number-page flex-r">
+                    <p>1</p>
                 </div>
             </div>
-            <div class="right-container pages firstP-Off"></div>
+            <div class="card flex-c off">
+                <div class="title flex-c">
+                    <img src="../assets/img/logo_black.png">
+                    <h3>レストラン</h3>
+                    <p>gluten & dairy free, vegan friendly</p>
+                </div>
+                <div class="list">
+                    <div class="article flex-c">
+                        <div class="name-price flex-r">
+                            <p>Gohan</p>
+                            <p>2,75€</p>
+                        </div>
+                        <p>Acompañamiento tradicional en cualquier
+                            comida japonesa. Arroz blanco al vapor.
+                        </p>
+                    </div>
+                </div>
+                <div class="number-page flex-r">
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="card flex-c off">
+                <div class="title flex-c">
+                    <img src="../assets/img/logo_black.png">
+                    <h3>レストラン</h3>
+                    <p>gluten & dairy free, vegan friendly</p>
+                </div>
+                <div class="list">
+                    <div class="article flex-c">
+                        <div class="name-price flex-r">
+                            <p>Gohan</p>
+                            <p>2,75€</p>
+                        </div>
+                        <p>Acompañamiento tradicional en cualquier
+                            comida japonesa. Arroz blanco al vapor.
+                        </p>
+                    </div>
+                </div>
+                <div class="number-page flex-r">
+                    <p>3</p>
+                </div>
+            </div>
+            <div class="card flex-c off">
+                <div class="title flex-c">
+                    <img src="../assets/img/logo_black.png">
+                    <h3>レストラン</h3>
+                    <p>gluten & dairy free, vegan friendly</p>
+                </div>
+                <div class="list">
+                    <div class="article flex-c">
+                        <div class="name-price flex-r">
+                            <p>Gohan</p>
+                            <p>2,75€</p>
+                        </div>
+                        <p>Acompañamiento tradicional en cualquier
+                            comida japonesa. Arroz blanco al vapor.
+                        </p>
+                    </div>
+                </div>
+                <div class="number-page flex-r">
+                    <p>4</p>
+                </div>
+            </div>
         </div>
 </div>
 <script src="../js/main.js"></script>
