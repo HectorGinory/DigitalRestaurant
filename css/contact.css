@@ -6,15 +6,15 @@
 
 .contact-container .container {
     width: 26%;
-    height: 65%;
-    background-color: var(--color-2);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.166), rgba(255, 255, 255, 0.104));   
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.178);
     border-radius: .5rem;
     box-shadow: 0 0 .4rem var(--color-4),
                 inset .3rem 0 0.2rem rgba(0, 0, 0, 0.218);
     color: var(--color-3);
     border: .3rem solid var(--color-4);
     justify-content: flex-start;
+    backdrop-filter: blur(.1rem);
 }
 
 
@@ -49,8 +49,8 @@
 .contact-container .container .form-Elem {
     border: 0;
     box-shadow: 0 0 0.2rem var(--color-4);
-    margin: .5rem 0;
-    padding: .5rem;
+    margin: .35rem 0;
+    padding: .35rem;
     border-radius: 0.3rem;
     background: transparent;
     background: rgba(255, 118, 118, 0.15);
@@ -99,9 +99,8 @@
 }
 
 .contact-info button:hover {
-    box-shadow: inset .2rem .2rem .4rem rgba(0, 0, 0, 0.39),
-                inset -.2rem -.2rem .4rem rgba(255, 255, 255, 0.39);
-    filter: brightness(.9);
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.37),
+                inset .2rem .2rem .4rem rgba(255, 255, 255, 0.39);
 }
 
 @media (max-width: 950px) {

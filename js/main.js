@@ -1,25 +1,29 @@
 let actualPage = 0;
 
 const nextPage = () => {
-    let cardsArray = document.getElementsByClassName('card');
+    let listsArray = document.getElementsByClassName('list');
+    let numberPage = document.getElementById('page-number')
 
-    if (actualPage+1 !== cardsArray.length) {
-        cardsArray[actualPage].classList.remove('on')
-        cardsArray[actualPage].classList.add('off')
+    if (actualPage+1 !== listsArray.length) {
+        listsArray[actualPage].classList.remove('on')
+        listsArray[actualPage].classList.add('off')
         actualPage++;
-        cardsArray[actualPage].classList.remove('off')
-        cardsArray[actualPage].classList.add('on')
+        listsArray[actualPage].classList.remove('off')
+        listsArray[actualPage].classList.add('on')
+        numberPage.innerHTML = actualPage + 1
     }
 }
 
 const prevPage = () => {
-    let cardsArray = document.getElementsByClassName('card');
+    let listsArray = document.getElementsByClassName('list');
+    let numberPage = document.getElementById('page-number')
     
     if(actualPage !== 0) {
-        cardsArray[actualPage].classList.remove('on')
-        cardsArray[actualPage].classList.add('off')
+        listsArray[actualPage].classList.remove('on')
+        listsArray[actualPage].classList.add('off')
         actualPage--;
-        cardsArray[actualPage].classList.remove('off')
-        cardsArray[actualPage].classList.add('on')
+        listsArray[actualPage].classList.remove('off')
+        listsArray[actualPage].classList.add('on')
+        numberPage.innerHTML = actualPage + 1 
     }
 }

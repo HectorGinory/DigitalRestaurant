@@ -3,14 +3,16 @@
     height: 5rem;
     background-color: var(--color-4);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.121), rgba(0, 0, 0, 0.121));
-    position: fixed;
+    position: absolute;
+    top: 0;
+    z-index: 999;
 }
 
 .menu-container {
     width: 100%;
     height: 4rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: c;
 }
 
 .menu-container img {
@@ -49,6 +51,7 @@
 .btn-container a {
     color: var(--color-2);
     transition: .5s;
+    font-weight: 600;
 }
 .btn-container a::after {
     content: '';
@@ -107,7 +110,8 @@
         background: var(--color-4);
         margin-right: 0;
         z-index: 2;
-
+        border-top: 0.5rem solid var(--color-4);
+        border-bottom: 0.5rem solid var(--color-4);
     }
 
     .menu .btn-container a {

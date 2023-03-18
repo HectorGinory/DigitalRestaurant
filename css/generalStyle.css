@@ -7,9 +7,12 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: var(--color-2);
+    background-color: var(--color-2);
+    background-size: 12rem;
+    box-shadow: inset 0 0 6rem rgba(0, 0, 0, 0.11);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 button, a {
@@ -19,7 +22,7 @@ button, a {
 
 a {
     text-decoration: none;
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 .main-container {
@@ -45,4 +48,25 @@ a {
 
 h4 , h5 , h6 {
     font-family: 'Nunito Sans';
+}
+
+.background-animation {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/img/pattern.jpg');
+    background-size: 10rem;
+    opacity: .05;
+    animation: backgroundMove 9s infinite linear;
+    z-index: -1;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10rem 10em;
+    }
+    
 }
