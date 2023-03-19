@@ -52,5 +52,5 @@ After that I created the 3 pages and picking information from the original one, 
 <img src="./assets/img/card_okashi.png" style="width:500px"/>
 
 <br>
-Like I said the page it´s responsive, so 
+Like I said the page it´s responsive and also the card have some dynamics, so 
 <a href="https://hectorginory.github.io/DigitalRestaurant/">check it out!</a>
