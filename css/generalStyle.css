@@ -27,7 +27,8 @@ a {
 
 .main-container {
     width: 100vw;
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
+    height: auto;
     overflow: auto;
     margin-top: 5rem;
 }

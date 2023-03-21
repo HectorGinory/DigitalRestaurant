@@ -121,7 +121,7 @@
     }
 
     .contact-container .container {
-        height: 15rem;
+        height: auto;
         width: 85%;
     }
     .contact-container .container h4 {

@@ -1,11 +1,13 @@
 .home-container {
-    border: 8px solid var(--color-4);
     width: 90%;
-    height: 60%;
-    background: rgba(255, 255, 255, 0.247);
-    justify-content: space-around;
-    backdrop-filter: blur(0.05rem);
+    min-height: 30rem;
     z-index: 1;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.247);
+    backdrop-filter: blur(0.05rem);
+    border-radius: 2rem;
+    box-shadow: .4rem .4rem .2rem rgba(0, 0, 0, 0.293),
+                -.4rem -.4rem .2rem rgba(255, 255, 255, 0.144);
 }
 
 
@@ -121,5 +123,11 @@
     }
     .home-container h4 {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .home-container {
+        margin-top: 5rem;
     }
 }
